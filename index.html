@@ -1,15 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saurabh data analytics</title>
-</head>
-<body>
-    This is my first portfolio Website.
-    <br>
-    <a href="https://techiguru.in/">Visit Our web site</a>
-    <!-- add image in web page -->
-     <img style="width: 200px; height: 200px;"  src="https://images.pexels.com/photos/36040851/pexels-photo-36040851.jpeg"></img>
-</body>
-</html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Rivera | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#e7eefe",
+                    "on-tertiary-container": "#828485",
+                    "surface-bright": "#f9f9ff",
+                    "primary-fixed": "#e2e2e8",
+                    "primary-container": "#1a1c20",
+                    "secondary-fixed": "#dde1ff",
+                    "on-secondary-container": "#efefff",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#c6c6cc",
+                    "tertiary-fixed": "#e1e3e4",
+                    "on-background": "#151c27",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#1a1c20",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#0040e0",
+                    "surface-container-high": "#e2e8f8",
+                    "surface": "#f9f9ff",
+                    "surface-variant": "#dce2f3",
+                    "tertiary": "#000000",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#0035be",
+                    "background": "#f9f9ff",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "inverse-primary": "#c6c6cc",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d3daea",
+                    "on-secondary-fixed": "#001356",
+                    "tertiary-container": "#191c1d",
+                    "surface-tint": "#5d5e63",
+                    "outline": "#76777b",
+                    "surface-container-highest": "#dce2f3",
+                    "on-surface": "#151c27",
+                    "primary": "#000000",
+                    "outline-variant": "#c6c6cb",
+                    "secondary-container": "#2e5bff",
+                    "on-surface-variant": "#45474b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#828489",
+                    "on-primary-fixed-variant": "#45474b",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#b8c3ff",
+                    "tertiary-fixed-dim": "#c5c7c8",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-tertiary-fixed": "#191c1d",
+                    "inverse-surface": "#2a313d",
+                    "surface-container-low": "#f0f3ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "margin-mobile": "20px",
+                    "base": "4px",
+                    "section-gap": "64px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+            color: #151c27;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav-border {
+            border-top: 2px solid #0040e0;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md flex items-center justify-between px-margin-mobile h-16 border-b border-outline-variant">
+<div class="font-headline-md text-headline-md-mobile tracking-tighter text-primary">PORTFOLIO</div>
+<div class="cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+</div>
+</header>
+<main class="pt-16 pb-20">
+<!-- Hero Section -->
+<section class="px-margin-mobile py-section-gap flex flex-col items-center text-center" id="home">
+<div class="w-32 h-32 rounded-full overflow-hidden mb-8 border border-outline-variant bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A professional, clean studio portrait of a modern digital creative named Alex Rivera. The lighting is soft and high-key, matching a minimalist aesthetic with a soft white background. Alex has a confident yet approachable expression. The overall style is editorial and high-end, focusing on professional clarity and modern professionalism with subtle cool tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzFuvIV6FTdgeN5NrSld4FXvaujqAjoic9eqJ1wpZ10M0yzjYWvfT7bHVZrEDhwzKZ04ZAerrz0PDMJBDQg4tOexSR5lg93oAVffVaTat8CGoAHAEkg-do7rwsFEeZliAZxyBOFjM7Wfzbb9FRpw-gLj5A5y50-ElBN6xDNjGf8qRytNCv8lvlJhlA0oESvu7QSy7q3TLbCAN0Tv63TGt5Tc7O3fYQwsw39WlaJp2TUmqoo6wI3uKL"/>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-base">Alex Rivera</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xs">
+                Crafting digital experiences with precision and purpose.
+            </p>
+</section>
+<!-- About Section -->
+<section class="px-margin-mobile py-section-gap bg-surface-container-lowest" id="about">
+<div class="max-w-md mx-auto">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-base">About</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-gutter">Design as a tool for clarity.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    With over five years of experience at the intersection of design and technology, I focus on creating interfaces that are not only aesthetically pleasing but fundamentally functional. I believe that the best design is often the one you don't notice.
+                </p>
+</div>
+</section>
+<!-- Selected Work Section -->
+<section class="px-margin-mobile py-section-gap" id="work">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-gutter text-center">Selected Work</span>
+<div class="flex flex-col gap-section-gap">
+<!-- Project 1 -->
+<div class="group">
+<div class="aspect-[4/3] w-full overflow-hidden rounded bg-surface-container mb-gutter border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist mobile application interface design for a luxury travel brand. The UI features generous whitespace, a sophisticated typography hierarchy using sans-serif fonts, and high-quality photography of serene landscapes. The color palette is monochromatic with deep charcoal accents, reflecting a high-end, professional digital product aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC323-lSBlIvSIxSrA5yPwIMmZUUndwPyyzHow9qmd9hNRsUds0at11vqpXMF4sOwPe5_LjhqP695L1vaVnQXmLMYys1GRAyz6crtNdZijsf2AlW4R2dKq1OaJysEVHt_Gs3IMJKIl-PQY7Pg5s7JP5PazZwO3T-DqsJxD8GhsAKL1E73sVDEJtzp5nBkhn_8r5CVgSQdNkvxcRrpBwAdsiTl5-ayRDoPZYNvTfiDatrVJzu1MshHHV"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase">UI/UX Design</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-base">Lumina Travel App</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-base">A premium booking experience for conscious travelers seeking luxury and serenity.</p>
+</div>
+<!-- Project 2 -->
+<div class="group">
+<div class="aspect-[4/3] w-full overflow-hidden rounded bg-surface-container mb-gutter border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean and technical dashboard interface for a fintech startup. The design uses a fluid grid system with subtle gray borders to define data sections. Information is presented through elegant, low-contrast charts and clean typography. The mood is professional, secure, and technologically advanced, following a strict minimalist design philosophy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYvSB6VF_5fnsO-cK_QZmPXMLkgRTwlbOqViH0hJyEh7m-DDEL1aeobspT3jmWywnHOWWHgfoC7OpOxvfPQk-cvR_Gxx-fUgH-Q_0YPplRJECOSPA46ChwE1chf3R5fQSH8HskvKwC6U-jZ1059P3fHE6S0_XxaXGcA3Tv-ASF_28kJ5_nwop_Isjahs0Md8SWxX24ZwEPsw_ycANwMD-bSscxsGwpq9UZ_gB7U0tB3F8neOX9kcc7"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase">Frontend Development</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-base">Vortex Analytics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-base">Real-time data visualization platform built for high-performance financial tracking.</p>
+</div>
+<!-- Project 3 -->
+<div class="group">
+<div class="aspect-[4/3] w-full overflow-hidden rounded bg-surface-container mb-gutter border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional brand identity presentation including business cards and a mobile website mockup. The branding uses a bold, custom logotype in deep black against a soft white background. The aesthetic is extremely minimalist, focusing on vertical rhythm and editorial-style layout. Lighting is diffused and soft, highlighting the professional confidence of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGqAcoF1qdjCXkvBhDACLOTCZtsbtymy1H7WGjSK5BKOVP9qH0D8n74LZ6x6-xTN5E8gHhqZ0KU9xxMdWcLxKPDDusekVz1pHoILEjCBDu3GsxVdxqpbOtOWU3dyXh8QEHbrJDiH0YfNB9nSypyisLOtNuG-7CO9OORgilTe1Y19oyzBpigP-KSQC6wbkXAWoFt_bQOzbWPOVmwXIuGY5y4Yik0zFdPWr9Hq_td2Vh5k_xqCky2VvK"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase">Brand Identity</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-base">Apex Studio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-base">A comprehensive rebrand for a creative agency focused on technical sophistication.</p>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="px-margin-mobile py-section-gap bg-surface-container-low">
+<div class="max-w-md mx-auto">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-gutter">Core Competencies</span>
+<div class="grid grid-cols-1 gap-gutter">
+<div class="p-gutter bg-surface border border-outline-variant flex items-center gap-gutter">
+<span class="material-symbols-outlined text-secondary" data-icon="brush">brush</span>
+<span class="font-body-md text-body-md text-primary">UI/UX Design</span>
+</div>
+<div class="p-gutter bg-surface border border-outline-variant flex items-center gap-gutter">
+<span class="material-symbols-outlined text-secondary" data-icon="code">code</span>
+<span class="font-body-md text-body-md text-primary">Frontend Development</span>
+</div>
+<div class="p-gutter bg-surface border border-outline-variant flex items-center gap-gutter">
+<span class="material-symbols-outlined text-secondary" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-body-md text-body-md text-primary">Brand Identity</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-margin-mobile py-section-gap text-center" id="contact">
+<h2 class="font-headline-md text-headline-md text-primary mb-gutter">Let's work together.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-section-gap max-w-xs mx-auto">
+                Currently accepting new projects and collaborations for 2024.
+            </p>
+<a class="inline-block bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-label-sm tracking-widest uppercase hover:opacity-90 transition-opacity active:scale-95 transform" href="mailto:hello@alexrivera.com">
+                Get in Touch
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile py-section-gap flex flex-col items-center gap-base border-t border-outline-variant mb-16 bg-surface">
+<div class="font-headline-md text-headline-md text-primary mb-4">PORTFOLIO</div>
+<div class="flex gap-gutter mb-gutter">
+<a class="font-label-sm text-label-sm text-on-tertiary-container hover:text-secondary transition-colors" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-container hover:text-secondary transition-colors" href="#">GitHub</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-container hover:text-secondary transition-colors" href="#">Dribbble</a>
+</div>
+<p class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-tighter">© 2024 PORTFOLIO. ALL RIGHTS RESERVED.</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-margin-mobile bg-surface/90 backdrop-blur-sm border-t border-outline-variant">
+<a class="flex flex-col items-center justify-center text-secondary font-bold active-nav-border h-full px-4 transition-all duration-200" href="#work">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-sm text-label-sm">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant h-full px-4 transition-all duration-200 hover:text-primary" href="#about">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant h-full px-4 transition-all duration-200 hover:text-primary" href="#contact">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-label-sm text-label-sm">Contact</span>
+</a>
+</nav>
+<script>
+        // Simple scroll spy to update active nav state
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-secondary', 'font-bold', 'active-nav-border');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('text-secondary', 'font-bold', 'active-nav-border');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
